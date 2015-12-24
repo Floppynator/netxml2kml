@@ -1,1 +1,15 @@
 http://www.salecker.org/software/netxml2kml.html
+
+$ python netxml2kml.py --help
+Usage: 
+python netxml [options] [file1] [file2] [...] [dir1] [dir2] [...]
+./netxml [options] [dir1] [dir2] [...] [file1] [file2] [...]
+
+Example:
+python netxml.py --kmz --kml -o today somefile.netxml /mydir
+
+Options:
+  -h, --help     show this help message and exit
+  -o OUTPUTNAME  Filename without extension
+  --kml          Create a KML file for Google Earth <outputname>.kml
+  --kmz          Create a KMZ file for Google Earth <outputname>.kmz
